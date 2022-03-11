@@ -1,0 +1,122 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json 
+
+{
+    "username":"bao2",
+    "email":"bao@gmail.com",
+    "password":"bao"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json 
+
+{
+    "username":"bao",
+    "password":"bao"
+}
+
+###
+GET http://localhost:5000/api/user/all
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY4OTE4NjAsImV4cCI6MTY0Njk3ODI2MH0.NIndjTzX3rmPqjxEMOP89IkEyqdf5semsEKi6IIUv4M
+
+###
+PUT http://localhost:5000/api/user/all/62289f6b567ef69538870349
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY4OTE4NjAsImV4cCI6MTY0Njk3ODI2MH0.NIndjTzX3rmPqjxEMOP89IkEyqdf5semsEKi6IIUv4M
+
+{
+    "fullname":"Ngu2",
+    "address":"QN2",
+    "email":"ngupdate2@gmail.com",
+    "phonenumber":"999999992",
+    "role":"customer"
+}
+###
+GET http://localhost:5000/api/user/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY4OTE4NjAsImV4cCI6MTY0Njk3ODI2MH0.NIndjTzX3rmPqjxEMOP89IkEyqdf5semsEKi6IIUv4M
+
+###
+PUT http://localhost:5000/api/user/6228a3c9a23895d4537fc354 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY4OTE4NjAsImV4cCI6MTY0Njk3ODI2MH0.NIndjTzX3rmPqjxEMOP89IkEyqdf5semsEKi6IIUv4M
+
+{
+    "fullname":"admin",
+    "address":"admin",
+    "email":"admin@gmail.com",
+    "phonenumber":"99999999"
+}
+
+###
+DELETE http://localhost:5000/api/user/622a01ff8e9986a977e71e01
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY4OTE4NjAsImV4cCI6MTY0Njk3ODI2MH0.NIndjTzX3rmPqjxEMOP89IkEyqdf5semsEKi6IIUv4M
+
+
+
+###
+GET http://localhost:5000/api/user/stats
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY4OTE4NjAsImV4cCI6MTY0Njk3ODI2MH0.NIndjTzX3rmPqjxEMOP89IkEyqdf5semsEKi6IIUv4M
+
+###
+POST http://localhost:5000/api/product/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY4OTQ0NzEsImV4cCI6MTY0Njk4MDg3MX0.DEB1e5sRG-7MgklTg9DUxMbzy6tm9hp2n42SFkllqSo
+
+{
+    "title":"Iphone2",
+    "desc":"Tot nhat thi truong",
+    "img":"link.link",
+    "categories":["oppo","dat"],
+    "color":"red",
+    "price":"1000"
+}
+
+###
+GET http://localhost:5000/api/product/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY5NjM2MzAsImV4cCI6MTY0NzA1MDAzMH0.lqU-sGiGVWYIxQuhBZs6QufsDErXaoUWzc-OWfNOT_k
+
+###
+GET http://localhost:5000/api/product/?new=true
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY4OTQ0NzEsImV4cCI6MTY0Njk4MDg3MX0.DEB1e5sRG-7MgklTg9DUxMbzy6tm9hp2n42SFkllqSo
+
+###
+GET http://localhost:5000/api/product/?category=tot
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY5NjM2MzAsImV4cCI6MTY0NzA1MDAzMH0.lqU-sGiGVWYIxQuhBZs6QufsDErXaoUWzc-OWfNOT_k
+
+###
+GET http://localhost:5000/api/product/find/62299dcba8324f0a6e948300
+Content-Type: application/json
+
+###
+POST http://localhost:5000/api/order
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI5YzA2MGQ3NjYxYmEwYzE5ODE2MTkiLCJyb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE2NDY5MjAzNTgsImV4cCI6MTY0NzAwNjc1OH0.Hrgq5iIA5IJ7tIBkp7LDe7a8-FHbYKAHzX3UU0DqDx8
+
+{
+    "userId":"6229c060d7661ba0c1981619",
+    "products": [
+        {
+            "productId":"2121",
+            "quantity":2
+        },
+        {
+            "productId":"21215343",
+            "quantity":1
+        }  
+    ],
+    "amount":10000,
+    "address":"QNAM"
+}
+
+###
+GET http://localhost:5000/api/order/income
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4YTNjOWEyMzg5NWQ0NTM3ZmMzNTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY5MjI5OTQsImV4cCI6MTY0NzAwOTM5NH0.wlxE04SwJdywByWcmQM6EqaJh7t7NUcCsx65v1TAZ2A
